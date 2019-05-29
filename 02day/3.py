@@ -11,8 +11,8 @@ def add_card():
 def del_card():
     stu_id = input("请输入您要删除的学号：")
     if stu_id in dict3:
-        del dict3
-        print("%s，您的名单已删除")
+        del dict3[stu_id]
+        print("%s，您的名单已删除"%stu_id)
     else:
         print("您的学号未找到,请确认")
         del_card()
